@@ -7,6 +7,7 @@ from sqlalchemy.orm import Session
 from database import SessionLocal, engine
 from models import *
 from schemas import *
+from database import engine
 
 from passlib.context import CryptContext
 
