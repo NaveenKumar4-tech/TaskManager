@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{  
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+ font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container{
+    min-height:100vh;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px
+}
+
+.heading{
+    font-size: 40px;
+}
+
+.task-manager{
+    min-width:400px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap:20px;
+    overflow: hidden;
+}
+
+#title,textarea{
+    width:100%;
+    padding:10px;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+}
+
+/* --------buttons ---------------- */
+
+#updatebtn{
+    display:none;
+    padding:10px;
+    background-color: dodgerblue;
+    color:white;
+    border-radius: 5px;
+    outline:none;
+    border:none;
+    cursor:pointer
+}
+
+#btn{
+    padding:10px;
+    background-color: orangered;
+    color:white;
+    border-radius: 5px;
+    outline:none;
+    border:none;
+    cursor:pointer
+}
+
+.editbtn{
+    background-color:gray;
+    padding:10px;
+    color:white;
+    border-radius: 5px;
+    outline:none;
+    border:none;
+    cursor:pointer
+}
+
+
+.delbtn{
+    background-color:red;
+    padding:10px;
+    color:white;
+    border-radius: 5px;
+    outline:none;
+    border:none;
+    cursor:pointer
+}
+/* ------------------view tasks ------------------ */
+.view-task{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    overflow: auto;
+    height: 200px;
+}
+
+
+.task{
+    background: white;
+    padding: 10px;
+    border-radius: 5px
+}
+
+.task-p{
+    width: 60%;
+    text-align: center
+}
+
+.task>div:first-child{
+    display: flex;
+    align-items: anchor-center;
+}
+
+.expand{
+    min-height:100px;
+    align-items:baseline;
+    width:380px;
+    overflow: auto;
+}
+/* - ---------update status --------------------*/
+
+.completed{
+    text-decoration: line-through;
+    opacity:0.6;
+}
+
+/* ----------------responsive -------------*/
+
+@media screen and (max-width:450px){
+    .task-manager{
+        min-width:300px;
+    }
+
+    .expand{
+        width:280px
+    }
+
+    .delbtn,.editbtn{
+        padding:5px
+    }
+
+    .heading{
+    font-size: 35px
+    }
+}

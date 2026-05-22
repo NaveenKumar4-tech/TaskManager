@@ -1,0 +1,42 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    background-color:darkslategray;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    outline:none;
+    border: none;
+    border-radius: 5px;
+    margin:10px 0
+}
+
+a{
+    text-decoration: none;
+    color:white
+}
+
+button{
+    padding: 10px;
+     outline:none;
+    border: none;
+    border-radius: 5px;
+    margin:10px;
+    background-color: orangered;
+    color:white;
+}
+
+

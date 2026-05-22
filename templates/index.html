@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">TASK MANAGER</h1>
+        
+        <div class="task-manager">
+            <input type="text" placeholder="Title" id="title"/>
+            <textarea type="text" placeholder="Note" id="note"></textarea>
+            <button id="btn">Add</button>
+            <button id="updatebtn" onclick="updatetask()">Update</button>
+
+            <!--------------view task ------------------- -->
+            <div class="view-task">
+            </div>
+        </div>
+
+
+    </div>
+
+<script src="static/script.js"></script>
+</body>
+</html>
